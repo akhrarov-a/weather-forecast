@@ -16,8 +16,6 @@ const getContext = (history: History, store: Store) => {
       disabledToken = false
     ) => {
       try {
-        headers.channel = 'admin';
-        headers['Cache-Control'] = 'no-cache';
         const token = localStorage.getItem('idtoken');
         const response = await instance({
           ...config,
