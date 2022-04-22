@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "serve -s dist",
     "serve": "npm run update:module:paths && webpack-dev-server --config ./webpack/webpack.server.js",
     "build": "npm run update:module:paths && cross-env NODE_ENV=production webpack --mode=production --config ./webpack/webpack.prod.js",
     "test": "cross-env TESTING=true jest -all --coverage --config=\"./tests/config/jest.config.js\"",
@@ -12,7 +13,9 @@
     "e2e:watch": "jest  --watch --config=\"./tests/e2e/jest.config.js\"",
     "eslint": "eslint --fix \"./src/**/*.{ts,tsx}\"",
     "stylelint": "stylelint --fix \"./src/**/*.scss\" && prettier --write \"./src/**/*.scss\"",
-    "update:module:paths": "node ./scripts/update-module-paths.js"
+    "update:module:paths": "node ./scripts/update-module-paths.js",
+    "heroku-postbuild": "npm run build",
+    "prebuild": "rimraf dist"
   },
   "author": "",
   "license": "ISC",
