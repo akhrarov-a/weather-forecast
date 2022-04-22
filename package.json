@@ -1,5 +1,5 @@
 {
-  "name": "react-template",
+  "name": "weather-forecast",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -48,6 +48,7 @@
     "redux-chill": "^3.0.3",
     "redux-devtools-extension": "^2.13.8",
     "redux-saga": "^1.1.3",
+    "serve": "^13.0.2",
     "to-case": "^2.0.0",
     "yup": "^0.27.0"
   },
