@@ -24,8 +24,8 @@
       "@api": ["./src/api/index"],
       "@app": ["./src/modules/app/index"],
       "@app/*": ["./src/modules/app/*"],
-      "@auth": ["./src/modules/auth/index"],
-      "@auth/*": ["./src/modules/auth/*"]
+      "@weather": ["./src/modules/weather/index"],
+      "@weather/*": ["./src/modules/weather/*"]
     }
   },
   "include": ["./src/**/*", "./typings/**/*"],

@@ -1,6 +1,6 @@
 import { GeneralState } from './general';
 import { RouterState } from './router';
-import { AuthState } from '@auth';
+import { WeatherState } from '@weather/store';
 
 /**
  * App state
@@ -8,7 +8,7 @@ import { AuthState } from '@auth';
 type State = {
   general: GeneralState;
   router: RouterState;
-  auth: AuthState;
+  weather: WeatherState;
 };
 
 export { State };

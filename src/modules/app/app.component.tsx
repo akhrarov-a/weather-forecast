@@ -1,22 +1,22 @@
-import React, { FC } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import React from 'react';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import { register } from '@core';
-import { AppProps } from './app.props';
 import styles from './app.scss';
 
 /**
  * Lazy imports
  */
-const Auth = register('auth', () => import('@auth'));
+const Weather = register('weather', () => import('@weather'));
 
 /**
  * <App />
  */
-const App: FC<AppProps> = ({}) => (
+const App = () => (
   <div className={styles.app}>
     <React.Suspense fallback={<div>Loading...</div>}>
       <Switch>
-        <Route path='/auth' component={Auth} />
+        <Route path='/weather' component={Weather} />
+        <Redirect to='/weather' />
       </Switch>
     </React.Suspense>
   </div>

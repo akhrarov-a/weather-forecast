@@ -1,0 +1,29 @@
+@import 'core.scss';
+
+.container {
+  @include flex(center, center);
+
+  width: 100vw;
+  height: 100vh;
+  background: $light-blue;
+}
+
+.content {
+  width: 500px;
+  padding: 50px 40px;
+  background: $white-smoke;
+  box-shadow: 0 2px 6px $white-smoke;
+  border-radius: 4px;
+  text-align: center;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
