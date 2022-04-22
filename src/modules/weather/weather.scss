@@ -9,8 +9,9 @@
 }
 
 .content {
-  width: 500px;
-  padding: 50px 40px;
+  width: fit-content;
+  min-width: 600px;
+  padding: 80px 60px;
   background: $white-smoke;
   box-shadow: 0 2px 6px $white-smoke;
   border-radius: 4px;
@@ -20,6 +21,7 @@
     font-size: 40px;
     font-weight: 300;
     margin-bottom: 30px;
+    white-space: nowrap;
   }
 
   p {
