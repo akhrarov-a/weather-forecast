@@ -23,7 +23,6 @@ class WeatherService {
    * Api
    */
   public api = this.create({
-    withCredentials: true,
     baseURL: enviroment.apiUrl
   });
 
